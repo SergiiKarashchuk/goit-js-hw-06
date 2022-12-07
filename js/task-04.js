@@ -24,15 +24,15 @@ increment.addEventListener('click', () => {
     updateDisplay(counterValue);
     console.log(counterValue)
   });
-  
+
 decrement.addEventListener('click', () => {
     counterValue -= 1;
     updateDisplay(counterValue);
     console.log(counterValue)
   });
 
-  function updateDisplay(val) {
-    document.getElementById("value").innerHTML = val;
+  function updateDisplay(counterValue) {
+    document.getElementById("value").innerHTML = counterValue;
 }
 
 
