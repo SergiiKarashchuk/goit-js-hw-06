@@ -17,22 +17,26 @@ console.log(counterValue)
 
 const increment = document.querySelector("[data-action='increment']");
 const decrement = document.querySelector("[data-action='decrement']");
-const Counter = document.querySelector("#value");
+
 
 increment.addEventListener('click', () => {
     counterValue += 1;
-    updateDisplay(counterValue);
+    updateTextSpan(counterValue);
     console.log(counterValue)
   });
 
 decrement.addEventListener('click', () => {
     counterValue -= 1;
-    updateDisplay(counterValue);
+    updateTextSpan(counterValue);
     console.log(counterValue)
   });
 
-  function updateDisplay(counterValue) {
+  function updateTextSpan(counterValue) {
     document.getElementById("value").innerHTML = counterValue;
 }
+
+
+
+
 
 
